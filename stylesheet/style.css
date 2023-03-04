@@ -1,0 +1,186 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+  
+
+* {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
+  color: #e7e8e8;
+}
+
+body{
+  background-image: url(/images/abstract-envelope.png);
+  font-family: 'Playfair Display', serif;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+    padding: 10px;
+    width: 6%;
+  }
+
+.title {
+  font-size: 1.5em;
+  padding: 2%;
+
+}
+
+main{
+    display: flex;
+    height: auto;
+    padding: 0 2%;
+    flex-direction: column;
+}
+
+.box{
+  display: flex;
+  justify-content: space-around;
+}
+
+.encryptor {
+  width: 60%;
+  height: 30rem;
+  background: #161834;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid #e7e8e8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.textarea {
+  width: 75%;
+  height: 50%;
+  font-size: 1.5em;
+  border-style: none;
+  background: none;
+  outline: none;
+  margin: 4rem;
+  text-transform: lowercase;
+  resize: none;
+}
+
+.textarea::placeholder{
+    color: #e7e8e8;
+}
+
+.info {
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.buttoms {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.btn-encryptor {
+  height: 50px;
+  width: 40%;
+  background: #323a61;
+  border-radius: 30px;
+  font-size: 15px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.btn-encryptor:hover {
+  background: #95A3BC;
+  background: linear-gradient(130deg, #242C4C 0%, #445A8B 100%);
+ }
+ 
+ .btn-encryptor:active {
+  transform: translate(0em, 0.2em);
+ }
+  
+  .btn-decryptor{
+  height: 50px;
+  width: 40%;
+  background: #323a61;
+  border-radius: 30px;
+  font-size: 15px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  }
+  
+  .btn-decryptor:hover {
+    background: #95A3BC;
+    background: linear-gradient(130deg, #242C4C 0%, #445A8B 100%);
+   }
+   
+   .btn-decryptor:active {
+    transform: translate(0em, 0.2em);
+   }
+
+.decryptor {
+  width: 25%;
+  background: rgb(22,24,52);
+  background: linear-gradient(3600deg, rgba(22,24,52,1) 0%, rgba(50,58,97,1) 10%, rgba(231,232,232,1) 100%);border: 1px solid #161834;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+  display: block;
+  align-items: center;
+}
+
+.message {
+  width: 80%;
+  height: 85%;
+  border: none;
+  background: none;
+  outline: none;
+  resize: none;
+  text-align: center;
+  color: #161834;
+
+}
+
+.message::placeholder{
+    color: #161834;
+}
+
+.buttoms-copy{
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.btn-copy {
+height: 50px;
+width: 70%;
+margin: 2% 12%;
+background: #445A8B;
+border-radius: 30px;
+font-size: 15px;
+border: none;
+overflow: hidden;
+z-index: 1;
+cursor: pointer;
+}
+
+.btn-copy:hover {
+  background: #242C4C;
+  background: linear-gradient(130deg,  #161834 0%, #445A8B 100%);
+ }
+ 
+ .btn-copy:active {
+  transform: translate(0em, 0.2em);
+ }
