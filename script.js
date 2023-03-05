@@ -12,10 +12,6 @@ function encrypt(){
 
 }
 
-window.onload = function () {
-    encrypt();
-    }
-
     function decrypt(){
         var text= document.getElementById("textarea").value;
         textEncrypt= text.toString().replace(/ai/gm,"a");
@@ -31,11 +27,11 @@ window.onload = function () {
     }
     
     window.onload = function () {
+        encrypt();
         decrypt();
         }
 
 function copy(){
-    let content= document.querySelector("message");
-    content.select();
-    document.execCommand("copy");
-}
+    let content= document.getElementById("message").innerHTML;
+    navigator.clipboard.writeText(content);
+    }
