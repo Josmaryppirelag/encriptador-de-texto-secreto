@@ -1,10 +1,10 @@
 function encrypt(){
-    let text= document.getElementById("textarea").value();
-    let textEncrypt= text.replace(/a/gm,"ai");
-    let textEncrypt= textEncrypt.replace(/e/gm,"enter");
-    let textEncrypt= textEncrypt.replace(/i/gm,"imes");
-    let textEncrypt= textEncrypt.replace(/o/gm,"ober");
-    let textEncrypt= textEncrypt.replace(/u/gm,"ufat");
+    var text= document.getElementById("textarea").value;
+    textEncrypt= text.toString().replace(/a/gm,"ai");
+    textEncrypt= textEncrypt.replace(/e/gm,"enter");
+    textEncrypt= textEncrypt.replace(/i/gm,"imes");
+    textEncrypt= textEncrypt.replace(/o/gm,"ober");
+    textEncrypt= textEncrypt.replace(/u/gm,"ufat");
 
     document.getElementById("message").innerHTML= textEncrypt;
     document.getElementById("copy").style.display= "Show";
@@ -12,21 +12,29 @@ function encrypt(){
 
 }
 
-function decrypt(){
-    let text= document.getElementById("textarea").value();
-    let textEncrypt= text.replace(/ai/gm,"a");
-    let textEncrypt= textEncrypt.replace(/enter/gm,"e");
-    let textEncrypt= textEncrypt.replace(/imes/gm,"i");
-    let textEncrypt= textEncrypt.replace(/ober/gm,"o");
-    let textEncrypt= textEncrypt.replace(/ufat/gm,"u");
+window.onload = function () {
+    encrypt();
+    }
 
-    document.getElementById("message").innerHTML= textEncrypt;
-    document.getElementById("copy").style.display= "Show";
-    document.getElementById("copy").style.display= "inherit";
+    function decrypt(){
+        var text= document.getElementById("textarea").value;
+        textEncrypt= text.toString().replace(/ai/gm,"a");
+        textEncrypt= textEncrypt.replace(/enter/gm,"e");
+        textEncrypt= textEncrypt.replace(/imes/gm,"i");
+        textEncrypt= textEncrypt.replace(/ober/gm,"o");
+        textEncrypt= textEncrypt.replace(/ufat/gm,"u");
+    
+        document.getElementById("message").innerHTML= textEncrypt;
+        document.getElementById("copy").style.display= "Show";
+        document.getElementById("copy").style.display= "inherit";
+    
+    }
+    
+    window.onload = function () {
+        decrypt();
+        }
 
-}
-
-function copiar(){
+function copy(){
     let content= document.querySelector("message");
     content.select();
     document.execCommand("copy");

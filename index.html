@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="stylesheet/reset.css">
 <link rel="stylesheet" href="stylesheet/style.css">
 <link rel="icon" href="images/android-chrome-192x192.png">
-<script src="/script.js"></script>
 <title>Texto secreto</title>
 
 </head>
@@ -24,12 +23,12 @@
 <textarea id="textarea" class="textarea" placeholder="Cuentanos un secreto"></textarea>
 <h6 class="info">&#8658; Sólo minúsculas y sin acentos.</h6>
 <div class="buttoms">
-<button class="btn-encryptor" onclick="encrypt()">Encriptar</button>
+<button id="btnEncrypt" class="btn-encryptor" onclick="encrypt()">Encriptar</button>
 <button class="btn-decryptor"onclick="decrypt()">Desencriptar</button>
 </div>
 </div>
 <div class="decryptor">
-<textarea class="message" placeholder="El secreto permance oculto"></textarea>
+<textarea id="message" class="message" placeholder="El secreto permance oculto"></textarea>
 <button id="copy" class="btn-copy" onclick="copy()">Copiar</button>
 </div>
 </section>
@@ -39,5 +38,6 @@
 <a href="https://github.com/Josmaryppirelag"><img src="images/logo-github.png" alt="github-logo" class="logos-footer"></a>Josmary Pirela - 2023</p>
 </footer>
 </div>
+<script src="/script.js"></script>
 </body>
 </html>
