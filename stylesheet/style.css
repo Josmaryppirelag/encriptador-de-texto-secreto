@@ -13,7 +13,6 @@ body{
   background-image: url(/images/abstract-envelope.png);
 }
 
-
 .container{
   width: 100%;
   max-width: 1440px;
@@ -180,6 +179,7 @@ border: none;
 overflow: hidden;
 z-index: 1;
 cursor: pointer;
+display: none;
 }
 
 .btn-copy:hover {
