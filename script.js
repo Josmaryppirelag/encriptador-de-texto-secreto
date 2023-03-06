@@ -1,6 +1,5 @@
-function mostrar(){
-document.getElementById("copy").style.display = "show";
-document.getElementById("copy").style.display = "inherit";
+function ocultar(){
+document.getElementById("copy").style.display = "none";
   
 }
 
