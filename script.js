@@ -10,10 +10,6 @@ function encrypt(){
 
 }
 
-if(encrypt == true) {
-    alert("Texto desencriptado");
-    }
-
     function decrypt(){
         var text= document.getElementById("textarea").value;
         textEncrypt= text.toString().replace(/ai/gm,"a");
