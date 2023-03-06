@@ -179,7 +179,7 @@ border: none;
 overflow: hidden;
 z-index: 1;
 cursor: pointer;
-  display: none;
+display: block;
 }
 
 .btn-copy:hover {
