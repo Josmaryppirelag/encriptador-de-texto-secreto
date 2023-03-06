@@ -7,8 +7,6 @@ function encrypt(){
     textEncrypt= textEncrypt.replace(/u/gm,"ufat");
 
     document.getElementById("message").innerHTML= textEncrypt;
-    document.getElementById("copy").style.display= "Show";
-    document.getElementById("copy").style.display= "inherit";
 
 }
 
@@ -21,8 +19,6 @@ function encrypt(){
         textEncrypt= textEncrypt.replace(/ufat/gm,"u");
     
         document.getElementById("message").innerHTML= textEncrypt;
-        document.getElementById("copy").style.display= "Show";
-        document.getElementById("copy").style.display= "inherit";
     
     }
     
