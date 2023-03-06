@@ -7,9 +7,12 @@ function encrypt(){
     textEncrypt= textEncrypt.replace(/u/gm,"ufat");
 
     document.getElementById("message").innerHTML= textEncrypt;
-    alert("Texto encriptado");
 
 }
+
+if(encrypt() == true) {
+    alert("Texto desencriptado");
+    }
 
     function decrypt(){
         var text= document.getElementById("textarea").value;
@@ -20,7 +23,6 @@ function encrypt(){
         textEncrypt= textEncrypt.replace(/ufat/gm,"u");
     
         document.getElementById("message").innerHTML= textEncrypt;
-        alert("Texto desencriptado");
     }
     
     window.onload = function () {
