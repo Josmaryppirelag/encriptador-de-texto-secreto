@@ -191,21 +191,16 @@ display: block;
   transform: translate(0em, 0.2em);
  }
 
-.page-footer {
-  grid-area: footer;
-}
-
-.content-footer {
-  color: #242424;
-  background-color: #f25fff;
-  font-weight: 600;
+ footer {
+  background-color: #242C4C;
+  padding: 0.313em 0 0 0;
   text-align: center;
-  box-sizing: border-box;
-  height: 100%;
-  padding: 10px;
-}
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+ }
 
-  footer p{
+ footer p{
   font-size: 1em;
  }
 
@@ -213,7 +208,7 @@ display: block;
   width: 30px;
  }
 
- @media screen and (max-width: 800px){
+@media screen and (max-width: 800px){
 
   .logo{
     width: 10%;
