@@ -7,7 +7,6 @@ function encrypt(){
     textEncrypt= textEncrypt.replace(/u/gm,"ufat");
 
     document.getElementById("message").innerHTML= textEncrypt;
-    
 
 }
 
