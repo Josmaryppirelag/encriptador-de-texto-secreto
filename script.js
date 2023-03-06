@@ -10,7 +10,7 @@ function encrypt(){
 
 }
 
-if(encrypt() == true) {
+if(encrypt == true) {
     alert("Texto desencriptado");
     }
 
