@@ -1,3 +1,10 @@
+function mostrar(){
+document.getElementById("copy").style.display = "show";
+document.getElementById("copy").style.display = "inherit";
+  
+}
+
+
 function encrypt(){
     var text= document.getElementById("textarea").value;
     textEncrypt= text.toString().replace(/a/gm,"ai");
@@ -26,10 +33,6 @@ function encrypt(){
         encrypt();
         decrypt();
         }
-
-function mostrar(){
-document.getElementById("copy").style.display = 'block';
-}
 
 function copy(){
     let content= document.getElementById("message").innerHTML;
