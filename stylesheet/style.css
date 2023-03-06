@@ -191,16 +191,21 @@ display: block;
   transform: translate(0em, 0.2em);
  }
 
- footer {
-  background-color: #242C4C;
-  padding: 0.313em 0 0 0;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
- }
+.page-footer {
+  grid-area: footer;
+}
 
- footer p{
+.content-footer {
+  color: #242424;
+  background-color: #f25fff;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px;
+}
+
+  footer p{
   font-size: 1em;
  }
 
@@ -232,15 +237,3 @@ display: block;
   width: 100%;
   height: 40%;
 }
-
- }
-
- footer {
-  background-color: #242C4C;
-  padding: 0.313em 0 0 0;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
- }
-
