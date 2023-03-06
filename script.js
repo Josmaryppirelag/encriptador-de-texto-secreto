@@ -1,8 +1,7 @@
-function ocultar(){
-document.getElementById("copy").style.display = "none";
+function mostrar(){
+document.getElementById("copy").style.display = "block";
   
 }
-
 
 function encrypt(){
     var text= document.getElementById("textarea").value;
@@ -13,6 +12,7 @@ function encrypt(){
     textEncrypt= textEncrypt.replace(/u/gm,"ufat");
 
     document.getElementById("message").innerHTML= textEncrypt;
+    mostrar();
 
 }
 
@@ -25,6 +25,7 @@ function encrypt(){
         textEncrypt= textEncrypt.replace(/ufat/gm,"u");
     
         document.getElementById("message").innerHTML= textEncrypt;
+        mostrar();
     
     }
     
