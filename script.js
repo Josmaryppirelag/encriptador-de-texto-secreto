@@ -7,6 +7,7 @@ function encrypt(){
     textEncrypt= textEncrypt.replace(/u/gm,"ufat");
 
     document.getElementById("message").innerHTML= textEncrypt;
+    alert("Texto encriptado");
 
 }
 
@@ -19,7 +20,7 @@ function encrypt(){
         textEncrypt= textEncrypt.replace(/ufat/gm,"u");
     
         document.getElementById("message").innerHTML= textEncrypt;
-    
+        alert("Texto desencriptado");
     }
     
     window.onload = function () {
